@@ -265,11 +265,12 @@ textarea {
   --primary: black;
   --light: white;
   --dark: brown;
-  font-family: 'Lobster', cursive;
+  font-family: 'Raleway', sans-serif;
+  box-sizing:border-box;
 }
 html {
   color: var(--primary);
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4;
   
 }
@@ -291,7 +292,7 @@ img {
 nav{
   height: auto;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
 }
 .nav-list {
@@ -328,7 +329,7 @@ nav{
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 3rem;
+  padding-bottom: 2vh;
   height: 40vh;
 }
 
@@ -352,7 +353,7 @@ nav{
 }
 main {
   grid-area: main;
-  min-height: 50vh;
+  min-height: 100vh;
   /* display: grid; */
   /* background-color: khaki; */
   background-image: url("../img/family2.jpg");
@@ -504,6 +505,57 @@ justify-content: flex-start;
 
 }
 /* END PRESTATIONS */
+/* BLOG */
+.blog-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:  repeat(4, 30vh);
+  grid-template-areas: 
+  "bi1 bi2 bi3"
+  "bt1 bt2 bt3"
+  "bi4 bi5 bi6"
+  "bt4 bt5 bt6"
+ ;
+  grid-gap: 0.2rem;
+}
+.bi1{
+  grid-area: bi1;
+}
+.bi2{
+  grid-area: bi2;
+}
+.bi3{
+  grid-area: bi3;
+}
+.bi4{
+  grid-area: bi4;
+}
+.bi5{
+  grid-area: bi5;
+}
+.bi6{
+  grid-area: bi6;
+}
+.bt1{
+  grid-area: bt1;
+}
+.bt2{
+  grid-area: bt2;
+}
+.bt3{
+  grid-area: bt3;
+}
+.bt4{
+  grid-area: bt4;
+}
+.bt5{
+  grid-area: bt5;
+}
+.bt6{
+  grid-area: bt6;
+}
+
+/* END BLOG */
 .propos {
   grid-area: propos;
   background-color: #e2ece9;
@@ -517,22 +569,8 @@ justify-content: flex-start;
   display: grid;
   justify-items: center;
 }
-/* .propos-text h2 {
-align-self: flex-start;
-justify-self: center;
-} */
 
 
-/* .test{
-  background-image: url("../img/baby3.jpg");
-  display: flex;
-  object-fit: cover;
-  background-size: cover;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;  
-} */
 
 footer {
   background-color: #fff1e6;

@@ -53,43 +53,34 @@
 
 
   <section class="top">
-    <h1>GALERIES</h1>
+    <h1>CONTACT</h1>
   </section>
+ 
+  <section>
+     
+        <form action="/submit">
+            <p>
+                <label for="name">Prénom *</label>
+                <input type="text" name="pr&eacutenom" id="name" pattern="[A-Za-z]+" required>
+            </p>
+    
+            <p>
+                <label for="last-name">Nom *</label>
+                <input type="text" name="last-name" id="last-name" pattern="[A-Za-z]+" required>
+            </p>
+            <p>
+                <label for="object">Object *</label>
+                <input type="text" name="object" id="object" required>
+            </p>
+            <p>
+                <label for="message">Messages *</label>
+                <input type="longtext" name="message" id="message" required>
+            </p>
+            <button>Envoyer</button>
 
-  <section class="galerie">
-
-  <article class="p1">
-    <img src="img/a.jpg" alt="photo-a">
-  </article>
-
-  <article class="p2">
-    <img src="img/b.jpg" alt="photo-b">
-  </article>
-
-  <article class="p3">
-    <img src="img/c.jpg" alt="photo-c">
-  </article>
-
-  <article class="p4">
-    <img src="img/d.jpg" alt="photo-d">
-  </article>
-
-  <article class="p5">
-    <img src="img/e.jpg" alt="photo-e">
-  </article>
-
-  <article class="p6">
-    <img src="img/2.jpg" alt="photo-2">
-  </article>
-  
-  <article class="p7">
-    <img src="img/f.png" alt="photo-f">
-  </article>
-
-</section>
-  
-
-   
+    
+      </form>
+  </section>
 <section>
   <footer class="footer-bar">
     <div>
@@ -101,7 +92,7 @@
     <li class="foot-item"><a href="link-tiktok"><img src="icon/tik-tok.png" alt="icon-tiktok"></a></li>
     <p class="foot-item">All rights reserved</p>
   </footer>
-</section>
+</section> 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
